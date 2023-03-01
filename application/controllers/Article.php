@@ -19,6 +19,7 @@ class Article extends CI_Controller{
 
 
 		parent::__construct();
+		
 
 
 
