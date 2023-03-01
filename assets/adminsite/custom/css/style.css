@@ -1,0 +1,630 @@
+/*
+	Theme Name: Custom Admin For Gading Kostum
+	*/
+.content-wrapper.content-invoice {
+  margin-left: 0; }
+  .content-wrapper.content-invoice .invoice {
+    border: 0; }
+  .content-wrapper.content-invoice .invoice-print {
+    margin: 0;
+    padding: 0; }
+  .content-wrapper.content-invoice .content {
+    padding: 0;
+    margin: 0; }
+  .content-wrapper.content-invoice .sk {
+    font-size: 10px; }
+    .content-wrapper.content-invoice .sk h6 {
+      font-size: 10px; }
+  .content-wrapper.content-invoice .sk-print {
+    font-size: 10px; }
+    .content-wrapper.content-invoice .sk-print h6 {
+      font-size: 10px; }
+  .content-wrapper.content-invoice .personal-information label {
+    display: block;
+    width: 100%; }
+  .content-wrapper.content-invoice .personal-information p {
+    width: 100%;
+    display: block;
+    margin-bottom: 2px;
+    padding: 0;
+    margin-top: 0; }
+  .content-wrapper.content-invoice .personal-information .form-group {
+    margin-bottom: 5px; }
+  .content-wrapper.content-invoice .table-invoice span {
+    display: block;
+    width: 100%; }
+  .content-wrapper.content-invoice .table-invoice textarea {
+    text-align: center; }
+  .content-wrapper.content-invoice .table-invoice thead tr th {
+    text-align: center; }
+  .content-wrapper.content-invoice .table-invoice .invoice-signature {
+    text-align: center;
+    height: 180px;
+    border-radius: 10px; }
+  .content-wrapper.content-invoice .table-signature {
+    border: 0; }
+    .content-wrapper.content-invoice .table-signature thead tr {
+      border: 0; }
+      .content-wrapper.content-invoice .table-signature thead tr th {
+        border: 0; }
+    .content-wrapper.content-invoice .table-signature tbody {
+      border: 0; }
+      .content-wrapper.content-invoice .table-signature tbody tr td {
+        border: 0;
+        position: relative; }
+        .content-wrapper.content-invoice .table-signature tbody tr td .placeholder-signature {
+          position: absolute;
+          bottom: 20px;
+          width: 100%;
+          left: 0;
+          right: 0;
+          text-align: center;
+          padding: 0;
+          margin: 0; }
+.content-wrapper .content .info-box-icon {
+  position: relative; }
+  .content-wrapper .content .info-box-icon .tx-ab {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -wekit-transform: translate(-50%, -50%);
+    font-size: 10px;
+    color: #f39c12; }
+
+.main-header .sidebar-toggle:before {
+  content: ''; }
+
+.overlay {
+  display: none; }
+
+.btn-ajax-edit-action {
+  cursor: pointer; }
+
+.btn-ajax-delete-action {
+  cursor: pointer; }
+
+.radio-inline {
+  padding-left: 0; }
+
+.ui-pnotify-text p {
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 2px;
+  padding-bottom: 2px; }
+
+.input-info {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 13px; }
+  .input-info.italic {
+    font-style: italic; }
+
+.checkbox label {
+  padding-left: 0; }
+
+.table-align-middle img {
+  max-height: 90px;
+  max-width: 100%; }
+.table-align-middle tbody tr td {
+  vertical-align: middle; }
+
+.table-return-list tbody tr td:nth-child(3) {
+  text-align: left; }
+
+.btn-group-action {
+  margin-bottom: 5px; }
+
+.textarea-backend {
+  height: 120px !important; }
+
+.preview-more {
+  width: 100%;
+  max-height: 165px;
+  max-width: 160px; }
+
+.circle-button {
+  color: #fff; }
+
+.breadcrumb .active a {
+  color: #777 !important; }
+
+.info {
+  background-color: transparent;
+  padding: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0; }
+  .info .info-item {
+    padding: 10px; }
+  .info .info-title {
+    background-color: #b2b2b2;
+    color: white;
+    border: 1px solid #dad9d9; }
+  .info .info-data {
+    background-color: #e6e6e6;
+    color: black;
+    border: 1px solid #dad9d9; }
+  .info .info-item-wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+
+.main-product-rental-wrapper {
+  background-color: white;
+  border: 1px solid #7d7b7b;
+  box-shadow: 0 1px 1px #7d7b7b;
+  padding: 15px; }
+
+.product-rental-wrapper.product-rental-form {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px; }
+  .product-rental-wrapper.product-rental-form.form {
+    width: 69%; }
+  .product-rental-wrapper.product-rental-form.image {
+    width: 30%;
+    padding-top: 24px;
+    padding-right: 0; }
+
+.qty_rental {
+  width: 65px;
+  text-align: center;
+  margin: 0 auto; }
+
+.select2-container {
+  width: 100% !important; }
+
+.box-footer.inside-box-body {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0; }
+
+.table-list-item {
+  border: 3px solid #dad9d9; }
+  .table-list-item span {
+    display: block;
+    width: 100%; }
+  .table-list-item thead tr th {
+    text-align: center;
+    background-color: #9a9999;
+    color: white;
+    border: 3px solid #dad9d9; }
+  .table-list-item tbody tr td {
+    background-color: #e6e6e6;
+    color: black;
+    border: 3px solid #dad9d9; }
+  .table-list-item tfoot tr td {
+    background-color: #7d7b7b;
+    color: white;
+    border: 3px solid #dad9d9; }
+
+.table-invoice span {
+  display: block;
+  width: 100%; }
+.table-invoice textarea {
+  text-align: center; }
+.table-invoice thead tr th {
+  text-align: center; }
+.table-invoice .invoice-signature {
+  text-align: center;
+  height: 150px;
+  border-radius: 10px; }
+
+.table-order.table-print-order {
+  margin-bottom: 0; }
+  .table-order.table-print-order p {
+    text-align: center; }
+  .table-order.table-print-order td {
+    text-align: center; }
+.table-order span {
+  display: block;
+  width: 100%; }
+.table-order textarea {
+  text-align: center; }
+.table-order thead tr th {
+  text-align: center; }
+  .table-order thead tr th:nth-child(1) {
+    text-align: left; }
+.table-order tbody tr td {
+  vertical-align: middle; }
+.table-order textarea {
+  resize: none; }
+  .table-order textarea.note {
+    height: 150px; }
+
+.sk h6 {
+  margin-top: 5px;
+  margin-bottom: 6px; }
+
+.sk-print h6 {
+  margin-top: 5px;
+  margin-bottom: 6px; }
+
+.required {
+  color: red;
+  display: inline-block;
+  margin-right: 2px; }
+
+#rental_total {
+  vertical-align: middle; }
+
+#rental_total_hargasewa {
+  vertical-align: middle; }
+
+#rental_total_deposit {
+  vertical-align: middle; }
+
+textarea.form-control.note {
+  height: 100px;
+  border-radius: 10px;
+  resize: none; }
+  textarea.form-control.note.return-note {
+    height: 183px; }
+textarea.form-control.with-border-grey {
+  border-color: #C0C0C0; }
+
+.box-title.box-no-padding-top {
+  margin-top: 0; }
+
+.no-padding {
+  padding: 0; }
+
+.input-group-addon.padding-20 {
+  padding-right: 20px; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0 !important; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: transparent;
+    background: transparent;
+    border: 1px solid transparent; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+    background-color: transparent;
+    background: transparent;
+    border: 1px solid transparent; }
+
+table.dataTable tbody td {
+  padding: 8px; }
+  table.dataTable tbody td p {
+    margin-bottom: 0; }
+
+.info-box-text {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  letter-spacing: .3px; }
+
+.info-box-number {
+  line-height: 1.1;
+  font-size: 30px;
+  font-weight: bold; }
+
+.info-box-link {
+  font-size: 13px;
+  font-weight: normal;
+  color: #333;
+  text-decoration: none;
+  outline: 0; }
+  .info-box-link:hover {
+    color: #333;
+    text-decoration: none;
+    outline: 0; }
+  .info-box-link:active {
+    color: #333;
+    text-decoration: none;
+    outline: 0; }
+  .info-box-link:focus {
+    color: #333;
+    text-decoration: none;
+    outline: 0; }
+
+.pnotify-center {
+  right: calc(50% - 200px) !important; }
+
+.wrapper-select-product .thumbnail-select-product {
+  margin-left: 1px;
+  display: inline-block;
+  width: 13% !important;
+  vertical-align: top;
+  margin-top: 5px;
+  max-height: 60px;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none; }
+  .wrapper-select-product .thumbnail-select-product:hover {
+    outline: 0; }
+  .wrapper-select-product .thumbnail-select-product:focus {
+    outline: 0; }
+  .wrapper-select-product .thumbnail-select-product:active {
+    outline: 0; }
+
+.datepicker-days .table-condensed:nth-child(1) {
+  width: 100%; }
+.datepicker-days .top-thead tr:nth-child(3) {
+  display: none !important; }
+
+#calendar .datepicker-inline, #main-calendar .datepicker-inline {
+  width: 100%; }
+  #calendar .datepicker-inline .dow, #main-calendar .datepicker-inline .dow {
+    color: white;
+    background-color: #545557;
+    padding-bottom: 10px; }
+    #calendar .datepicker-inline .dow:first-child, #main-calendar .datepicker-inline .dow:first-child {
+      border-left: 0; }
+    #calendar .datepicker-inline .dow:last-child, #main-calendar .datepicker-inline .dow:last-child {
+      border-right: 0; }
+  #calendar .datepicker-inline i.icon, #main-calendar .datepicker-inline i.icon {
+    margin: 8px .25rem 0 0; }
+  #calendar .datepicker-inline .prev, #main-calendar .datepicker-inline .prev {
+    padding-left: 20px;
+    background: #80afbd;
+    background-color: #80afbd; }
+    #calendar .datepicker-inline .prev:hover, #main-calendar .datepicker-inline .prev:hover {
+      background-color: #80afbd; }
+    #calendar .datepicker-inline .prev:focus, #main-calendar .datepicker-inline .prev:focus {
+      outline: 0; }
+    #calendar .datepicker-inline .prev:active, #main-calendar .datepicker-inline .prev:active {
+      outline: 0; }
+    #calendar .datepicker-inline .prev.disabled, #main-calendar .datepicker-inline .prev.disabled {
+      visibility: visible;
+      padding-left: 20px;
+      background: #80afbd;
+      background-color: #80afbd; }
+      #calendar .datepicker-inline .prev.disabled:hover, #main-calendar .datepicker-inline .prev.disabled:hover {
+        background-color: #80afbd; }
+      #calendar .datepicker-inline .prev.disabled:focus, #main-calendar .datepicker-inline .prev.disabled:focus {
+        outline: 0; }
+      #calendar .datepicker-inline .prev.disabled:active, #main-calendar .datepicker-inline .prev.disabled:active {
+        outline: 0; }
+  #calendar .datepicker-inline .datepicker-switch, #main-calendar .datepicker-inline .datepicker-switch {
+    font-size: 17px;
+    background: #80afbd;
+    background-color: #80afbd; }
+    #calendar .datepicker-inline .datepicker-switch:hover, #main-calendar .datepicker-inline .datepicker-switch:hover {
+      background-color: #80afbd; }
+    #calendar .datepicker-inline .datepicker-switch:focus, #main-calendar .datepicker-inline .datepicker-switch:focus {
+      outline: 0; }
+    #calendar .datepicker-inline .datepicker-switch:active, #main-calendar .datepicker-inline .datepicker-switch:active {
+      outline: 0; }
+  #calendar .datepicker-inline .next, #main-calendar .datepicker-inline .next {
+    padding-right: 20px;
+    background: #80afbd;
+    background-color: #80afbd; }
+    #calendar .datepicker-inline .next:hover, #main-calendar .datepicker-inline .next:hover {
+      background-color: #80afbd; }
+    #calendar .datepicker-inline .next:focus, #main-calendar .datepicker-inline .next:focus {
+      outline: 0; }
+    #calendar .datepicker-inline .next:active, #main-calendar .datepicker-inline .next:active {
+      outline: 0; }
+    #calendar .datepicker-inline .next.disabled, #main-calendar .datepicker-inline .next.disabled {
+      visibility: visible;
+      padding-right: 20px;
+      background: #80afbd;
+      background-color: #80afbd; }
+      #calendar .datepicker-inline .next.disabled:hover, #main-calendar .datepicker-inline .next.disabled:hover {
+        background-color: #80afbd; }
+      #calendar .datepicker-inline .next.disabled:focus, #main-calendar .datepicker-inline .next.disabled:focus {
+        outline: 0; }
+      #calendar .datepicker-inline .next.disabled:active, #main-calendar .datepicker-inline .next.disabled:active {
+        outline: 0; }
+  #calendar .datepicker-inline table, #main-calendar .datepicker-inline table {
+    width: 100%; }
+    #calendar .datepicker-inline table .top-thead tr:nth-child(3), #main-calendar .datepicker-inline table .top-thead tr:nth-child(3) {
+      display: none; }
+    #calendar .datepicker-inline table.table-separate, #main-calendar .datepicker-inline table.table-separate {
+      border-collapse: separate;
+      border-spacing: 3px; }
+    #calendar .datepicker-inline table thead tr th, #main-calendar .datepicker-inline table thead tr th {
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-radius: 0; }
+    #calendar .datepicker-inline table thead tr:nth-child(2), #main-calendar .datepicker-inline table thead tr:nth-child(2) {
+      color: white;
+      font-family: 'roihu-bold';
+      letter-spacing: .8px;
+      background-color: #80afbd; }
+      #calendar .datepicker-inline table thead tr:nth-child(2):hover, #main-calendar .datepicker-inline table thead tr:nth-child(2):hover {
+        background-color: #80afbd; }
+      #calendar .datepicker-inline table thead tr:nth-child(2):focus, #main-calendar .datepicker-inline table thead tr:nth-child(2):focus {
+        outline: 0; }
+      #calendar .datepicker-inline table thead tr:nth-child(2):active, #main-calendar .datepicker-inline table thead tr:nth-child(2):active {
+        outline: 0; }
+    #calendar .datepicker-inline table tbody tr td, #main-calendar .datepicker-inline table tbody tr td {
+      color: #707070;
+      background: #eee;
+      border: 4px solid transparent;
+      border-radius: 0;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+      #calendar .datepicker-inline table tbody tr td:hover, #main-calendar .datepicker-inline table tbody tr td:hover {
+        border-radius: 0;
+        border: 0; }
+      #calendar .datepicker-inline table tbody tr td.day, #main-calendar .datepicker-inline table tbody tr td.day {
+        background: #a0e3ba;
+        background-color: #a0e3ba; }
+        #calendar .datepicker-inline table tbody tr td.day.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.highlight-day {
+          border: 4px solid #5E7F6E !important; }
+        #calendar .datepicker-inline table tbody tr td.day.active.active, #main-calendar .datepicker-inline table tbody tr td.day.active.active {
+          color: #707070;
+          border: 4px solid #9d9d9d;
+          background: #a0e3ba;
+          background-color: #a0e3ba; }
+          #calendar .datepicker-inline table tbody tr td.day.active.active:hover, #main-calendar .datepicker-inline table tbody tr td.day.active.active:hover {
+            color: #707070;
+            border: 4px solid #9d9d9d;
+            background: #a0e3ba;
+            background-color: #a0e3ba; }
+          #calendar .datepicker-inline table tbody tr td.day.active.active:active, #main-calendar .datepicker-inline table tbody tr td.day.active.active:active {
+            color: #707070;
+            border: 4px solid #9d9d9d;
+            background: #a0e3ba;
+            background-color: #a0e3ba; }
+          #calendar .datepicker-inline table tbody tr td.day.active.active:focus, #main-calendar .datepicker-inline table tbody tr td.day.active.active:focus {
+            color: #707070;
+            border: 4px solid #9d9d9d;
+            background: #a0e3ba;
+            background-color: #a0e3ba; }
+          #calendar .datepicker-inline table tbody tr td.day.active.active.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.active.active.highlight-day {
+            border: 4px solid #5E7F6E !important;
+            color: #707070 !important; }
+            #calendar .datepicker-inline table tbody tr td.day.active.active.highlight-day.new, #main-calendar .datepicker-inline table tbody tr td.day.active.active.highlight-day.new {
+              color: white !important; }
+              #calendar .datepicker-inline table tbody tr td.day.active.active.highlight-day.new.disabled, #main-calendar .datepicker-inline table tbody tr td.day.active.active.highlight-day.new.disabled {
+                color: #707070 !important; }
+          #calendar .datepicker-inline table tbody tr td.day.active.active.partially, #main-calendar .datepicker-inline table tbody tr td.day.active.active.partially {
+            color: #707070 !important;
+            border: 4px solid #9d9d9d !important;
+            background-color: #d6f7bb;
+            background-image: -webkit-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+            background-image: -moz-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+            background-image: -o-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%); }
+            #calendar .datepicker-inline table tbody tr td.day.active.active.partially:hover, #main-calendar .datepicker-inline table tbody tr td.day.active.active.partially:hover {
+              background-color: #d6f7bb;
+              background-image: -webkit-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+              background-image: -moz-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+              background-image: -o-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%); }
+            #calendar .datepicker-inline table tbody tr td.day.active.active.partially:active, #main-calendar .datepicker-inline table tbody tr td.day.active.active.partially:active {
+              border: 4px solid #9d9d9d;
+              background-color: #d6f7bb;
+              background-image: -webkit-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+              background-image: -moz-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+              background-image: -o-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%); }
+            #calendar .datepicker-inline table tbody tr td.day.active.active.partially:focus, #main-calendar .datepicker-inline table tbody tr td.day.active.active.partially:focus {
+              border: 4px solid #9d9d9d;
+              background-color: #d6f7bb;
+              background-image: -webkit-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+              background-image: -moz-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+              background-image: -o-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%); }
+            #calendar .datepicker-inline table tbody tr td.day.active.active.partially.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.active.active.partially.highlight-day {
+              border: 4px solid #5E7F6E !important;
+              color: #707070 !important; }
+            #calendar .datepicker-inline table tbody tr td.day.active.active.partially.late, #main-calendar .datepicker-inline table tbody tr td.day.active.active.partially.late {
+              color: #707070 !important;
+              border: 4px solid #e20a1f !important; }
+              #calendar .datepicker-inline table tbody tr td.day.active.active.partially.late.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.active.active.partially.late.highlight-day {
+                border: 4px solid #5E7F6E !important;
+                color: #707070 !important; }
+        #calendar .datepicker-inline table tbody tr td.day:hover, #main-calendar .datepicker-inline table tbody tr td.day:hover {
+          background: #a0e3ba;
+          background-color: #a0e3ba; }
+        #calendar .datepicker-inline table tbody tr td.day:active, #main-calendar .datepicker-inline table tbody tr td.day:active {
+          background: #a0e3ba;
+          background-color: #a0e3ba; }
+        #calendar .datepicker-inline table tbody tr td.day:focus, #main-calendar .datepicker-inline table tbody tr td.day:focus {
+          background: #a0e3ba;
+          background-color: #a0e3ba; }
+        #calendar .datepicker-inline table tbody tr td.day.old, #main-calendar .datepicker-inline table tbody tr td.day.old {
+          background: #b21f0c !important;
+          background-color: #b21f0c !important;
+          color: white; }
+          #calendar .datepicker-inline table tbody tr td.day.old.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.old.highlight-day {
+            border: 4px solid #5E7F6E !important; }
+        #calendar .datepicker-inline table tbody tr td.day.new, #main-calendar .datepicker-inline table tbody tr td.day.new {
+          background: #b21f0c !important;
+          background-color: #b21f0c !important;
+          color: white !important; }
+          #calendar .datepicker-inline table tbody tr td.day.new.full, #main-calendar .datepicker-inline table tbody tr td.day.new.full {
+            color: #707070 !important; }
+        #calendar .datepicker-inline table tbody tr td.day.full, #main-calendar .datepicker-inline table tbody tr td.day.full {
+          background: #f4a7bc !important;
+          background-color: #f4a7bc !important; }
+          #calendar .datepicker-inline table tbody tr td.day.full.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.full.highlight-day {
+            border: 4px solid #5E7F6E !important; }
+        #calendar .datepicker-inline table tbody tr td.day.partially, #main-calendar .datepicker-inline table tbody tr td.day.partially {
+          border: 0 !important;
+          background-color: #d6f7bb;
+          background-image: -webkit-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+          background-image: -moz-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%);
+          background-image: -o-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%); }
+          #calendar .datepicker-inline table tbody tr td.day.partially.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.partially.highlight-day {
+            border: 4px solid #5E7F6E !important; }
+        #calendar .datepicker-inline table tbody tr td.day.late, #main-calendar .datepicker-inline table tbody tr td.day.late {
+          border: 4px solid #e20a1f !important;
+          color: white !important; }
+          #calendar .datepicker-inline table tbody tr td.day.late.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.late.highlight-day {
+            border: 4px solid #5E7F6E !important; }
+        #calendar .datepicker-inline table tbody tr td.day.disabled, #main-calendar .datepicker-inline table tbody tr td.day.disabled {
+          background: #c6c8ca !important;
+          background-color: #c6c8ca !important;
+          color: #707070; }
+          #calendar .datepicker-inline table tbody tr td.day.disabled.partially, #main-calendar .datepicker-inline table tbody tr td.day.disabled.partially {
+            color: #707070 !important;
+            background: #c6c8ca !important;
+            background-color: #c6c8ca !important; }
+            #calendar .datepicker-inline table tbody tr td.day.disabled.partially.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.partially.highlight-day {
+              border: 4px solid #5E7F6E !important; }
+            #calendar .datepicker-inline table tbody tr td.day.disabled.partially.late, #main-calendar .datepicker-inline table tbody tr td.day.disabled.partially.late {
+              border: 4px solid #e20a1f !important; }
+              #calendar .datepicker-inline table tbody tr td.day.disabled.partially.late.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.partially.late.highlight-day {
+                border: 4px solid #5E7F6E !important; }
+          #calendar .datepicker-inline table tbody tr td.day.disabled.new, #main-calendar .datepicker-inline table tbody tr td.day.disabled.new {
+            color: #707070 !important; }
+          #calendar .datepicker-inline table tbody tr td.day.disabled.full, #main-calendar .datepicker-inline table tbody tr td.day.disabled.full {
+            color: #707070 !important;
+            background-color: #f4a7bc !important;
+            background: #f4a7bc !important; }
+            #calendar .datepicker-inline table tbody tr td.day.disabled.full.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.full.highlight-day {
+              border: 4px solid #5E7F6E !important; }
+            #calendar .datepicker-inline table tbody tr td.day.disabled.full.late, #main-calendar .datepicker-inline table tbody tr td.day.disabled.full.late {
+              border: 4px solid #e20a1f !important; }
+              #calendar .datepicker-inline table tbody tr td.day.disabled.full.late.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.full.late.highlight-day {
+                border: 4px solid #5E7F6E !important; }
+          #calendar .datepicker-inline table tbody tr td.day.disabled.old, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old {
+            background: #b21f0c !important;
+            background-color: #b21f0c !important;
+            color: white; }
+            #calendar .datepicker-inline table tbody tr td.day.disabled.old.partially, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.partially {
+              color: #707070 !important;
+              background: #c6c8ca !important;
+              background-color: #c6c8ca !important;
+              /*background-color: #d6f7bb !important;
+              background-image: -webkit-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%) !important;
+              background-image: -moz-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%) !important;
+              background-image: -o-linear-gradient(295deg, #d6f7bb 50%, #a0e3ba 50%) !important;*/ }
+              #calendar .datepicker-inline table tbody tr td.day.disabled.old.partially.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.partially.highlight-day {
+                border: 4px solid #5E7F6E !important; }
+              #calendar .datepicker-inline table tbody tr td.day.disabled.old.partially.late, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.partially.late {
+                border: 4px solid #e20a1f !important; }
+                #calendar .datepicker-inline table tbody tr td.day.disabled.old.partially.late.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.partially.late.highlight-day {
+                  border: 4px solid #5E7F6E !important; }
+            #calendar .datepicker-inline table tbody tr td.day.disabled.old.full, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.full {
+              color: #707070 !important;
+              background: #c6c8ca !important;
+              background-color: #c6c8ca !important;
+              /*background-color: #f4a7bc !important;
+              background: #f4a7bc !important;*/ }
+              #calendar .datepicker-inline table tbody tr td.day.disabled.old.full.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.full.highlight-day {
+                border: 4px solid #5E7F6E !important; }
+              #calendar .datepicker-inline table tbody tr td.day.disabled.old.full.late, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.full.late {
+                border: 4px solid #e20a1f !important; }
+                #calendar .datepicker-inline table tbody tr td.day.disabled.old.full.late.highlight-day, #main-calendar .datepicker-inline table tbody tr td.day.disabled.old.full.late.highlight-day {
+                  border: 4px solid #5E7F6E !important; }
+
+@media screen and (max-width: 1199px) {
+  .product-rental-detail {
+    width: 100%; }
+
+  .info {
+    width: 100%; }
+    .info .info-title {
+      text-align: center; }
+    .info .info-data {
+      text-align: center; }
+
+  /*.main-calendar{
+  	display:inline-block;
+  	width: 53%;
+  	margin-top: 10px;
+  	padding: 15px 0;
+  }*/ }
+
+/*# sourceMappingURL=style.css.map */
