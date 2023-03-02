@@ -496,7 +496,7 @@ class Rental_order extends CI_Controller {
                 foreach($list as $index => $value){
                     $status = $value['rental_status'];
                     if($value['status_due'] == 'due_pickup'){
-                        $status .= '<span class="required" style="display:block; width: 100%; font-size: 11px; margin-top: 3px;">due pickup</span> <!-- Ndung --> <a class="btn-print-action btn btn-success btn-xs btn-flat" href="" style=" width: 70px; margin-bottom: 2px;">Pickup Now</a>';
+                        $status .= '<span class="required" style="display:block; width: 100%; font-size: 11px; margin-top: 3px;">due pickup</span> <!-- Ndung --> <a class="btn-print-action btn btn-success btn-xs btn-flat" href="'.base_url('adminsite/rental_order/pickupnw/').$value['rental_order_id'].'" style=" width: 70px; margin-bottom: 2px;">Pickup Now</a>';
                     }
 
                     if($value['status_due'] == 'due_return'){
@@ -523,6 +523,20 @@ class Rental_order extends CI_Controller {
             "aaData"                => $data,
             );
         echo json_encode($response);
+    }
+
+    //Ndung
+    Public function pickupnw(){
+        $id = $this->uri->segment(4);
+
+        $data = [
+            'rental_status' => 'pickup',
+        ];
+
+        $this->db->where('rental_order_id', $id);
+        $this->db->update('rental_order', $data);
+
+        redirect('adminsite/rental_order');
     }
 
     public function add() {
