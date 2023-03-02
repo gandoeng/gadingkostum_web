@@ -95,6 +95,23 @@
                 <a href="<?php echo base_url('adminsite/rental_order');?>" type="button" class="btn-flat btn-primary btn">Reset</a>
               </div>
             </form>
+
+            <!-- Ndungg -->
+            <form class="form-inline" style="margin-bottom: 10px;" action="" method="GET">
+              <div class="form-group">
+                <label style="display:block;">Backup Data </label>
+                <div class="form-group">
+                  <?php $years = range(2021, strftime("%Y", time())); ?>
+                  <select name="order_by" class="form-control">
+                    <option selected disabled hidden>Select Year</option>
+                    <?php foreach($years as $year) : ?>
+                      <option value="<?php echo $year; ?>"><?php echo $year; ?></option>
+                    <?php endforeach; ?>
+                  </select>
+                  <button type="submit" class="btn-flat btn-primary btn">Start Backup</button>
+                </div>
+              </div>
+            </form>
             
             <table id="<?php echo $table_data;?>" class="display text-center table table-hover table-bordered table-striped table-align-middle" cellspacing="0" width="100%">
               <thead>
