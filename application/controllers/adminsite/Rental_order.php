@@ -49,6 +49,40 @@ class Rental_order extends CI_Controller {
     public function cuman_tes(){
         echo $this->config->item('get_base_url');
     }
+
+
+    //Ndungg start
+    public function backup_rental_order(){
+        $dateStart = $this->input->get('datedBackupStart', TRUE);
+        $dateEnd = $this->input->get('datedBackupEnd', TRUE);
+
+
+        $this->db->where('rental_created >=', $dateStart);
+        $this->db->where('rental_created <=', $dateEnd);
+        $data = $this->db->get('rental_order')->result();
+
+        foreach($data as $d) { // loop over results
+            //$this->db->insert('tableTo', $r); // insert each row to another table
+            $this->db->insert('rental_order_backup',$d);
+        }
+
+        if($this->db->affected_rows() == 1){
+            echo "<script>
+            alert('Backup Successful');
+            window.location = ('/adminsite/rental_order_backup');
+            </script>";
+
+
+        } else {
+            echo "<script>
+                alert('Backup Unsuccessful');
+                window.location = ('/adminsite/rental_order_backup');
+            </script>" ;
+        }
+
+    }
+
+    //Ndung end
     
 	//New Product QR scan ajax
 	//Julian

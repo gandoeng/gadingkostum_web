@@ -97,21 +97,27 @@
             </form>
 
             <!-- Ndungg -->
-            <form class="form-inline" style="margin-bottom: 10px;" action="" method="GET">
-              <div class="form-group">
+            <!-- Ndungg start -->
+
+            <form class="form-inline" style="margin-bottom: 10px;" action="<?php echo base_url('adminsite/rental_order/backup_rental_order');?>" method="GET">
+              
                 <label style="display:block;">Backup Data </label>
                 <div class="form-group">
-                  <?php $years = range(2021, strftime("%Y", time())); ?>
-                  <select name="order_by" class="form-control">
-                    <option selected disabled hidden>Select Year</option>
-                    <?php foreach($years as $year) : ?>
-                      <option value="<?php echo $year; ?>"><?php echo $year; ?></option>
-                    <?php endforeach; ?>
-                  </select>
-                  <button type="submit" class="btn-flat btn-primary btn">Start Backup</button>
+                  <label style="display:block;">Dated from </label>
+                  <input type="text" id="datedBackupStart" name="datedBackupStart" class=" form-control" readonly="true" style="margin-top: 5px;" placeholder="Dated from">
+                  
                 </div>
-              </div>
+
+                <div class="form-group">
+                  <label style="display:block;">Dated to</label>
+                  <input type="text" id="datedBackupEnd" name="datedBackupEnd" class=" form-control" readonly="true" style="margin-top: 5px;" placeholder="Dated to">
+                  
+                  <button id="backupButton" type="submit" class="btn-flat btn-primary btn">Start Backup</button>
+                </div>
+
             </form>
+
+            <!-- Ndungg end -->
             
             <table id="<?php echo $table_data;?>" class="display text-center table table-hover table-bordered table-striped table-align-middle" cellspacing="0" width="100%">
               <thead>
@@ -141,3 +147,26 @@
   </section>
 </div>
 <iframe id="printf" name="printf" style="display:none;"></iframe>
+
+<!-- Ndunggg start -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#datedBackupStart").datepicker({
+      format: 'yyyy-mm-dd',
+      changeMonth: true,
+      changeYear: true,
+
+    });
+
+    $("#datedBackupEnd").datepicker({
+      format: 'yyyy-mm-dd',
+      changeMonth: true,
+      changeYear: true,
+
+    });
+
+  });
+
+</script>
+
+<!-- Ndunggg end -->
