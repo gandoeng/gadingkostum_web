@@ -95,11 +95,11 @@
                 </div>
                 <div class="col-lg-6">
                   <label style="margin: 10px 0px; width: 100%;"><span class="required" for="selectDelivery">*</span>Delivery Option
-                    <select class="form-control" id="selectDelivery" style="margin: 5px 0px;">
+                  <select class="form-control" id="selectDelivery" name="selectDelivery" style="margin: 5px 0px;">
                     <option disabled selected>Pilih</option>
-                    <option>Diambil sendiri</option>
-                    <option>Gojek</option>
-                    <option>JNE</option>
+                    <option value="sendiri" >Diambil sendiri</option>
+                    <option value="gojek">Gojek</option>
+                    <option value="jne">JNE</option>
                   </select>
                 </div>
               </div>
@@ -278,6 +278,10 @@
               <input readonly id="rental_invoice" type="text" name="rental_invoice" class="form-control">
               <label>Address</label>
               <textarea id="customer_address" style="height: 103px;" name="customer_address" class="form-control"></textarea>
+
+              <!-- Ndung -->
+              <label>Delivery Option</label>
+              <input readonly id="delivery_option" type="text" name="selectDelivery" class="form-control">
             </div>
           </div>
         </div>

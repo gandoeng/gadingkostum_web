@@ -1878,6 +1878,16 @@ public function form() {
             $jenis_transaksi_note        = $this->input->post('jenis_transaksi_note');
             $jenis_transaksi_nominal     = $this->input->post('jenis_transaksi_nominal');
 
+            //Ndung Start
+            $delivery_option             = $this->input->post('selectDelivery');
+            if($delivery_option == 'Diambil sendiri'){
+                $delivery_option = 'sendiri';
+            } else if($delivery_option == 'Gojek'){
+                $delivery_option = 'gojek';
+            } else if($delivery_option == 'JNE'){
+                $delivery_option = 'jne';
+            }
+
             $query_invoice_number = $this->backend_model->_get_last_invoice_number($store_location_category_id);
 
             if(isset($query_invoice_number['category']) && !empty($query_invoice_number['category'])){
@@ -1968,7 +1978,10 @@ public function form() {
                 'rental_total_extrapayment' => $rental_total_extrapayment,
                 'rental_created'            => date("Y-m-d H:i:s"),
                 'rental_modified'           => NULL,
-                'rental_active'             => 1
+                'rental_active'             => 1,
+
+                //Ndung
+                'delivery_option'           => $delivery_option
                 );
             $this->global_model->insert('rental_order',$insert_rental_order);
             $inserted_order_id = $this->db->insert_id();
