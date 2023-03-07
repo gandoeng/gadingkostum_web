@@ -545,6 +545,11 @@
               <input readonly id="rental_invoice" type="text" name="rental_invoice" class="form-control">
               <label>Address</label>
               <textarea id="customer_address" style="height: 103px;" name="customer_address" class="form-control"></textarea>
+
+              <!-- Ndung -->
+              <label>Delivery Option #</label>
+              <input readonly id="delivery_option" type="text" name="selectDelivery" class="form-control">
+
             </div>
           </div>
         </div>

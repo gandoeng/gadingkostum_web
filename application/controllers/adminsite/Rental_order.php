@@ -877,6 +877,9 @@ public function invkembali($id){
 
 public function form() {
         //View
+    //Ndung start
+    $this->form_validation->set_rules('selectDelivery','Delivery Option','trim');
+    //Ndung End
     $this->form_validation->set_rules('product_id','Product','trim');
     $this->form_validation->set_rules('customer_id','Customer','trim');
     $this->form_validation->set_rules('customer_name','Name','trim');
@@ -923,6 +926,10 @@ public function form() {
         $rental_total_deposit        = $this->input->post('rental_total_deposit');
         $rental_total_hargasewa      = $this->input->post('rental_total_hargasewa');
         $rental_total                = $this->input->post('rental_total');
+
+        //Ndung Start
+        $delivery_option             = $this->input->post('selectDelivery');
+        //Ndung End
 
         if(empty($rental_payment_status)){
             $rental_payment_status = 'paid';
@@ -985,7 +992,9 @@ public function form() {
                 'start_date'                 => $start_date,
                 'rental_total'               => number_format($rental_total),
                 'rental_total_deposit'       => number_format($rental_total_deposit),
-                'rental_total_hargasewa'     => number_format($rental_total_hargasewa)
+                'rental_total_hargasewa'     => number_format($rental_total_hargasewa),
+                //Ndungg
+                'delivery_option'            => $delivery_option
                 );
 
             $data_product = '';
@@ -1257,6 +1266,16 @@ public function form() {
             $rented                      = array();
             $temp_rented                 = array();
 
+            //Ndung Start
+            $delivery_option             = $this->input->post('selectDelivery');
+            if($delivery_option == 'Diambil sendiri'){
+                $delivery_option = 'sendiri';
+            } else if($delivery_option == 'Gojek'){
+                $delivery_option = 'gojek';
+            } else if($delivery_option == 'JNE'){
+                $delivery_option = 'jne';
+            }
+
             $get_product_popularity      = $this->backend_model->get_product_popularity($rental_order_id);
             if(!empty($get_product_popularity)){
                 $prod_rental = array();
@@ -1336,7 +1355,9 @@ public function form() {
                 'rental_terima_uangdeposit' => $rental_terima_uangdeposit,
                 'rental_return_uangdeposit' => $rental_return_uangdeposit,
                 'rental_total_extrapayment' => $rental_total_extrapayment,
-                'rental_modified'           => date('Y-m-d H:i:s')
+                'rental_modified'           => date('Y-m-d H:i:s'),
+                //Ndung
+                'delivery_option'           => $delivery_option
                 );
             $this->global_model->update('rental_order',$update_rental_order,array('rental_order_id'=>$rental_order_id));
 

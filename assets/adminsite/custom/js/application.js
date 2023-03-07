@@ -3650,6 +3650,9 @@ $(document).on('click','.remove-rental-product', function(e) {
 	table_order_tbody 		= $(table_order).find('#tbody-order'),
 	store_address 			= $('.store_address');
 
+	//Ndung
+	delivery_option 		= $('#delivery_option');
+
 	$("#open-form-2").submit(function(e) {
 		e.preventDefault();
 
@@ -3684,6 +3687,17 @@ $(document).on('click','.remove-rental-product', function(e) {
 					$(rental_total_hargasewa).find('strong').html('Rp. ' + result.data_single.rental_total_hargasewa);
 					$(rental_total_deposit).find('strong').html('Rp. ' + result.data_single.rental_total_deposit);
 					$(rental_total).find('strong').html('Rp. ' + result.data_single.rental_total);
+
+					//Ndungg
+					if(result.data_single.delivery_option == 'sendiri'){
+						$(delivery_option).val('Diambil sendiri');
+					} else if(result.data_single.delivery_option == 'gojek')  {
+						$(delivery_option).val('Gojek');
+					} else if(result.data_single.delivery_option == 'jne')  {
+						$(delivery_option).val('JNE');
+					} else {
+						$(delivery_option).val(result.data_single.delivery_option);
+					}
 
 					if(result.data_product !== undefined){
 						$(table_order_tbody).append(result.data_product);

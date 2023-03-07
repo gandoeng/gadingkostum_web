@@ -63,6 +63,17 @@
 
 								<div class="row">
 									<?php if(isset($rental_order) && !empty($rental_order)){
+
+										if($rental_order[0]['delivery_option'] == 'sendiri') {
+											$delivery = 'Diambil sendiri';
+										} else if($rental_order[0]['delivery_option'] == 'gojek') {
+											$delivery = 'Gojek';
+										} else if($rental_order[0]['delivery_option'] == 'jne') {
+											$delivery = 'JNE';
+										} else {
+											$delivery = $rental_order[0]['delivery_option'];
+										}
+
 										echo '<div class="col-sm-7">
 										<table class="box-information">
 											<tr>
@@ -78,6 +89,11 @@
 											<tr>
 												<td class="box-border border grey">Alamat</td>
 												<td class="box-border border">'.$rental_order[0]['customer_address'].'</td>
+											</tr>
+
+											<tr>
+												<td class="box-border border grey">Delivery</td>
+												<td class="box-border border">'.$delivery.'</td>
 											</tr>
 										</table>
 									</div>';
