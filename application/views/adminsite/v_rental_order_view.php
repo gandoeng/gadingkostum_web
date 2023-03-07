@@ -128,15 +128,35 @@
                   <label><span class="required">*</span>Return Date</label>
                   <input autocomplete="off" type="text" name="end_date" data-date-start-date="<?php echo date('j F Y',strtotime("+3 day",strtotime($rental_order[0]['rental_start_date'])));?>" value="<?php echo date('j F Y',strtotime($rental_order[0]['rental_end_date']));?>" class="datepicker-view-end form-control">
                 </div>
+
+                <!-- Ndung Start -->
                 <div class="col-lg-6">
                   <label style="margin: 10px 0px; width: 100%;"><span class="required" for="selectDelivery">*</span>Delivery Option
-                    <select class="form-control" id="selectDelivery" style="margin: 5px 0px;">
-                    <option disabled selected>Pilih</option>
-                    <option>Diambil sendiri</option>
-                    <option>Gojek</option>
-                    <option>JNE</option>
+                  <select class="form-control" id="selectDelivery" name="selectDelivery" style="margin: 5px 0px;">
+                    
+                    <?php
+                      if($rental_order[0]['delivery_option'] == NULL){
+                    ?>
+                        <option disabled selected>Pilih</option>
+                        <option value="sendiri">Diambil sendiri</option>
+                        <option value="gojek">Gojek</option>
+                        <option value="jne">JNE</option>
+                    <?php
+                      } else {
+                    ?>
+                        <option disabled>pilih</option>
+                        <option value="sendiri" <?php if($rental_order[0]['delivery_option'] == 'sendiri'){ echo 'selected';} ?> >Diambil sendiri</option>
+
+                        <option value="gojek" <?php if($rental_order[0]['delivery_option'] == 'gojek'){ echo 'selected';} ?> >Gojek</option>
+
+                        <option value="jne" <?php if($rental_order[0]['delivery_option'] == 'jne'){ echo 'selected';} ?> >JNE</option>
+                    <?php
+                      }
+                    ?>
+
                   </select>
                 </div>
+                <!-- Ndung end -->
               </div>
             </div>
 
