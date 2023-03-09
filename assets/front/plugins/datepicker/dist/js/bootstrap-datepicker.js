@@ -1041,7 +1041,27 @@
 					clsName = $.unique(clsName);
 				}
 
-				html.push('<td class="'+clsName.join(' ')+'"' + (tooltip ? ' title="'+tooltip+'"' : '') + ' data-date="' + prevMonth.getTime().toString() + '">' + content + '</td>');
+				//ndung start
+
+				var minsatu = d.getTime()-86400000;
+				var mindua = d.getTime()-(2*86400000);
+				var mintiga = d.getTime()-(3*86400000);
+				var minempat = d.getTime()-(4*86400000);
+				var minlima = d.getTime()-(5*86400000);
+				var minenam = d.getTime()-(6*86400000);
+				var mintujuh = d.getTime()-(7*86400000);
+
+				if(prevMonth.getTime() == minsatu || prevMonth.getTime() == mindua || prevMonth.getTime() == mintiga || prevMonth.getTime() == minempat || prevMonth.getTime() == minlima || prevMonth.getTime() == minenam || prevMonth.getTime() == mintujuh ){
+					html.push('<td class=" '+clsName.join(' ')+'"' + (tooltip ? ' title="'+tooltip+'"' : '') + ' data-date="' + prevMonth.getTime().toString() + '" style="color:#777;">' + content + '</td>');
+				} else{
+
+					html.push('<td class=" '+clsName.join(' ')+'"' + (tooltip ? ' title="'+tooltip+'"' : '') + ' data-date="' + prevMonth.getTime().toString() + '" >' + content + '</td>');
+				}	
+
+				//ndung end
+				
+				//html.push('<td class="'+clsName.join(' ')+'"' + (tooltip ? ' title="'+tooltip+'"' : '') + ' data-date="' + prevMonth.getTime().toString() + '">' + content + '</td>');
+				
 				tooltip = null;
 				if (weekDay === this.o.weekEnd){
 					html.push('</tr>');
